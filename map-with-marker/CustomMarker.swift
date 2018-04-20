@@ -16,5 +16,6 @@ class CustomMarker: UIView {
     class func instanceFromNib() -> CustomMarker {
         return UINib(nibName: "CustomMarker", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! CustomMarker
     }
-
+  
+    
 }

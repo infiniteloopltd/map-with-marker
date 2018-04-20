@@ -41,7 +41,10 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         return customMarker
     }
     
-    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        // An Info window is rendered as an image, it will not respond to actions.
+        print("Info Window Clicked On \(marker.title ?? "untitled")")
+    }
 
 }
 
